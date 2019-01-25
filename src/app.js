@@ -5,14 +5,11 @@ const Router = require('koa-router'); // 路由中间件
 const jwt = require('koa-jwt'); // 用于路由权限控制
 const koaBody = require('koa-body'); // 用于查询字符串解析到`ctx.request.query`
 
-// const errorHandle = require('./middlewares/errorHandle');
-const home = require('./routes/home');
 const api = require('./routes/api');
 
 const { secret } = require('./config/config');
 const app = new Koa();
 const router = new Router(); // 路由
-router.use('/', home.routes(), home.allowedMethods());
 router.use('/api', api.routes(), api.allowedMethods());
 
 const website = {
