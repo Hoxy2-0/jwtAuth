@@ -1,0 +1,23 @@
+{
+  "name": "jwt_auth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "supervisor src/app.js"
+  },
+  "repository": "git@github.com:aoxiaoqiang/jwbAuth.git",
+  "author": "Edwin <aoxiaoqiang@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "js-base64": "2.5.1",
+    "jsonwebtoken": "8.4.0",
+    "koa": "2.6.2",
+    "koa-body": "4.0.6",
+    "koa-jwt": "3.5.1",
+    "koa-router": "7.4.0",
+    "koa-static": "5.0.0"
+  },
+  "devDependencies": {
+    "supervisor": "0.12.0"
+  }
+}
